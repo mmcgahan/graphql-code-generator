@@ -129,7 +129,7 @@ export class ReactQueryVisitor extends ClientSideBaseVisitor<ReactQueryRawPlugin
       ),
     ];
 
-    return [...baseImports, `import { ${hookAndTypeImports.join(', ')} } from 'react-query';`];
+    return [...baseImports, `import { ${hookAndTypeImports.join(', ')} } from '@tanstack/react-query';`];
   }
 
   public getFetcherImplementation(): string {

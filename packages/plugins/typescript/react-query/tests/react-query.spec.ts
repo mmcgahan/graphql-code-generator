@@ -20,7 +20,7 @@ const validateTypeScript = async (
   return merged;
 };
 
-describe('React-Query', () => {
+describe('@tanstack/react-query', () => {
   it('Duplicated nested fragments are removed', async () => {
     const schema = buildSchema(/* GraphQL */ `
       schema {
@@ -145,7 +145,7 @@ describe('React-Query', () => {
       const out = (await plugin(schema, docs, config)) as Types.ComplexPluginOutput;
 
       expect(out.prepend).toContain(
-        `import { useQuery, useInfiniteQuery, useMutation, UseQueryOptions, UseInfiniteQueryOptions, UseMutationOptions, QueryFunctionContext } from 'react-query';`
+        `import { useQuery, useInfiniteQuery, useMutation, UseQueryOptions, UseInfiniteQueryOptions, UseMutationOptions, QueryFunctionContext } from '@tanstack/react-query';`
       );
 
       expect(out.prepend).toContain(`import { myCustomFetcher } from './my-file';`);
@@ -197,7 +197,7 @@ describe('React-Query', () => {
       const out = (await plugin(schema, docs, config)) as Types.ComplexPluginOutput;
 
       expect(out.prepend).toContain(
-        `import { useQuery, useMutation, UseQueryOptions, UseMutationOptions } from 'react-query';`
+        `import { useQuery, useMutation, UseQueryOptions, UseMutationOptions } from '@tanstack/react-query';`
       );
       expect(out.content).toBeSimilarStringTo(`export const useTestQuery = <
         TData = TTestQuery,
@@ -239,7 +239,7 @@ describe('React-Query', () => {
       const out = (await plugin(schema, docs, config)) as Types.ComplexPluginOutput;
 
       expect(out.prepend).toContain(
-        `import { useQuery, useInfiniteQuery, useMutation, UseQueryOptions, UseInfiniteQueryOptions, UseMutationOptions, QueryFunctionContext } from 'react-query';`
+        `import { useQuery, useInfiniteQuery, useMutation, UseQueryOptions, UseInfiniteQueryOptions, UseMutationOptions, QueryFunctionContext } from '@tanstack/react-query';`
       );
       expect(out.prepend).toContain(`import { useCustomFetcher } from './my-file';`);
       expect(out.content).toBeSimilarStringTo(`export const useTestQuery = <
@@ -477,7 +477,7 @@ describe('React-Query', () => {
       const out = (await plugin(schema, docs, config)) as Types.ComplexPluginOutput;
 
       expect(out.prepend).toContain(
-        `import { useQuery, useMutation, UseQueryOptions, UseMutationOptions } from 'react-query';`
+        `import { useQuery, useMutation, UseQueryOptions, UseMutationOptions } from '@tanstack/react-query';`
       );
       expect(out.prepend).toContain(`import { GraphQLClient } from 'graphql-request';`);
       expect(out.prepend).toContain(`import { RequestInit } from 'graphql-request/dist/types.dom';`);
@@ -526,7 +526,7 @@ describe('React-Query', () => {
 
       expect(out.prepend).toContain(`import type { GraphQLClient } from 'graphql-request';`);
       expect(out.prepend).toContain(
-        `import { useQuery, useMutation, type UseQueryOptions, type UseMutationOptions } from 'react-query';`
+        `import { useQuery, useMutation, type UseQueryOptions, type UseMutationOptions } from '@tanstack/react-query';`
       );
     });
     it('Should generate fetcher field when exposeFetcher is true', async () => {
@@ -658,7 +658,7 @@ describe('React-Query', () => {
       const out = (await plugin(schema, docs, config)) as Types.ComplexPluginOutput;
 
       expect(out.prepend).toContain(
-        `import { useQuery, useMutation, UseQueryOptions, UseMutationOptions } from 'react-query';`
+        `import { useQuery, useMutation, UseQueryOptions, UseMutationOptions } from '@tanstack/react-query';`
       );
       expect(out.prepend[1])
         .toBeSimilarStringTo(`    function fetcher<TData, TVariables>(query: string, variables?: TVariables) {
@@ -990,7 +990,7 @@ function fetcher<TData, TVariables>(query: string, variables?: TVariables) {
       const out = (await plugin(schema, docs, config)) as Types.ComplexPluginOutput;
 
       expect(out.prepend).toContain(
-        `import { useQuery, useMutation, UseQueryOptions, UseMutationOptions } from 'react-query';`
+        `import { useQuery, useMutation, UseQueryOptions, UseMutationOptions } from '@tanstack/react-query';`
       );
 
       expect(out.content).toBeSimilarStringTo(`export const useTestQuery = <

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`React-Query fetcher: custom-mapper Should generate mutation correctly with lazy variables 1`] = `
+exports[`@tanstack/react-query fetcher: custom-mapper Should generate mutation correctly with lazy variables 1`] = `
 "
 export const TestDocument = \`
     query test {
@@ -61,7 +61,7 @@ export const useTestMutation = <
     );"
 `;
 
-exports[`React-Query fetcher: custom-mapper Should generate query correctly with external mapper 1`] = `
+exports[`@tanstack/react-query fetcher: custom-mapper Should generate query correctly with external mapper 1`] = `
 "
 export const TestDocument = \`
     query test {
@@ -122,7 +122,7 @@ export const useTestMutation = <
     );"
 `;
 
-exports[`React-Query fetcher: custom-mapper Should generate query correctly with internal mapper 1`] = `
+exports[`@tanstack/react-query fetcher: custom-mapper Should generate query correctly with internal mapper 1`] = `
 "
 export const TestDocument = \`
     query test {
@@ -169,7 +169,7 @@ export const useTestMutation = <
     );"
 `;
 
-exports[`React-Query fetcher: fetch Should generate query and mutation correctly 1`] = `
+exports[`@tanstack/react-query fetcher: fetch Should generate query and mutation correctly 1`] = `
 "
 export const TestDocument = \`
     query test {
@@ -220,7 +220,7 @@ export const useTestMutation = <
     );"
 `;
 
-exports[`React-Query fetcher: graphql-request Should generate query correctly with client 1`] = `
+exports[`@tanstack/react-query fetcher: graphql-request Should generate query correctly with client 1`] = `
 "
 export const TestDocument = \`
     query test {
@@ -273,7 +273,7 @@ export const useTestMutation = <
     );"
 `;
 
-exports[`React-Query fetcher: hardcoded-fetch Should generate query correctly with fetch config 2`] = `
+exports[`@tanstack/react-query fetcher: hardcoded-fetch Should generate query correctly with fetch config 2`] = `
 "
 export const TestDocument = \`
     query test {
@@ -320,7 +320,7 @@ export const useTestMutation = <
     );"
 `;
 
-exports[`React-Query fetcher: hardcoded-fetch Should generate query correctly with fetch config and fetchParams object 2`] = `
+exports[`@tanstack/react-query fetcher: hardcoded-fetch Should generate query correctly with fetch config and fetchParams object 2`] = `
 "
 export const TestDocument = \`
     query test {
@@ -367,7 +367,7 @@ export const useTestMutation = <
     );"
 `;
 
-exports[`React-Query fetcher: hardcoded-fetch Should generate query correctly with hardcoded endpoint 1`] = `
+exports[`@tanstack/react-query fetcher: hardcoded-fetch Should generate query correctly with hardcoded endpoint 1`] = `
 "
 export const TestDocument = \`
     query test {
@@ -414,7 +414,7 @@ export const useTestMutation = <
     );"
 `;
 
-exports[`React-Query fetcher: hardcoded-fetch Should generate query correctly with hardcoded endpoint from env var 1`] = `
+exports[`@tanstack/react-query fetcher: hardcoded-fetch Should generate query correctly with hardcoded endpoint from env var 1`] = `
 "
 export const TestDocument = \`
     query test {
@@ -461,7 +461,7 @@ export const useTestMutation = <
     );"
 `;
 
-exports[`React-Query fetcher: hardcoded-fetch Should generate query correctly with hardcoded endpoint from just identifier 1`] = `
+exports[`@tanstack/react-query fetcher: hardcoded-fetch Should generate query correctly with hardcoded endpoint from just identifier 1`] = `
 "
 export const TestDocument = \`
     query test {
